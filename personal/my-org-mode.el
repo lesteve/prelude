@@ -162,6 +162,9 @@
 ;; org export for reveal.js presentations
 (require 'ox-reveal)
 
+;; org-protocol for capturing from firefox
+(require 'org-protocol)
+
 ;; ;; #+LaTeX_CLASS: beamer in org files
 ;; (unless (boundp 'org-export-latex-classes)
 ;;   (setq org-export-latex-classes nil))
