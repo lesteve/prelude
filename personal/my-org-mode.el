@@ -110,6 +110,10 @@
                                  ("~/org/notes/software.org" :maxlevel . 2)
                                  (nil :maxlevel . 3))))
 
+;; Need that in order for heml completion to work. From
+;; http://emacs.stackexchange.com/questions/14535/how-can-i-use-helm-with-org-refile
+(setq org-outline-path-complete-in-steps nil)
+
 ; Targets start with the file name - allows creating level 1 tasks
 (setq org-refile-use-outline-path (quote file))
 
