@@ -169,6 +169,12 @@
 ;; org-protocol for capturing from firefox
 (require 'org-protocol)
 
+;; Make windmove work in org-mode:
+(add-hook 'org-shiftup-final-hook 'windmove-up)
+(add-hook 'org-shiftleft-final-hook 'windmove-left)
+(add-hook 'org-shiftdown-final-hook 'windmove-down)
+(add-hook 'org-shiftright-final-hook 'windmove-right)
+
 ;; ;; #+LaTeX_CLASS: beamer in org files
 ;; (unless (boundp 'org-export-latex-classes)
 ;;   (setq org-export-latex-classes nil))
