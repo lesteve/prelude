@@ -136,7 +136,7 @@
           (lambda ()
             (auto-fill-mode t)
             (make-variable-buffer-local 'yas/trigger-key)
-            (org-set-local 'yas/trigger-key [tab])
+            (setq-local yas/trigger-key [tab])
             (define-key yas/keymap [tab] 'yas/next-field-group)
             ))
 
