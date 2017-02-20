@@ -8,7 +8,7 @@
 (elpy-use-ipython)
 
 ;; Work around Anaconda having a different Qt version that my system Qt
-(setq python-shell-interpreter-args "-i --matplotlib tk")
+(setq python-shell-interpreter-args "--simple-prompt -i --matplotlib tk")
 
 ;; emacs ipython notebook
 (require 'ein)
