@@ -88,11 +88,13 @@
 
 (setq org-capture-templates
       '(("c" "Refile later" entry (file+headline "~/org/refile.org" "Captured")
-         "* %? \nEntered on %T\n%i\n")
+         "* %?\nEntered on %T\n%i\n")
         ("t" "Todo" entry (file+headline "~/org/todo.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
         ("j" "Journal" entry (file+datetree "~/org/journal.org")
-         "* %?\nEntered on %U\n  %i\n  %a")))
+         "* %?\nEntered on %U\n  %i\n  %a")
+        ("w" "Webpage" entry (file+headline "~/org/refile.org" "Webpages")
+         "* %c\nEntered on %U\nSource: %:link\n%i\n%?")))
 
 ;; to make a TODO item dependent of its subtrees items
 (setq org-enforce-todo-dependencies t)
