@@ -1,1 +1,1 @@
-(prelude-require-packages '(elpy ox-reveal))
+(prelude-require-packages '(elpy ox-reveal helm-swoop))
