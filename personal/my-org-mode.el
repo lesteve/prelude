@@ -69,14 +69,10 @@
     (org-todo (if (= n-not-done 0) "DONE" "TODO"))))
 (add-hook 'org-after-todo-statistics-hook 'org-summary-todo)
 
-;; files to look up for the agenda
-;; easier to set them with C-c [ or C-c ]
-;; (setq org-agenda-files
-;;       (list "~/test/test.org"
-;;             "~/org/office.org"
-;;             "~/org/home.org"
-;;             "~/org/contact.org"
-;;             "~/org/admin.org"))
+;; files included in the agenda
+(setq org-agenda-files
+      (list "~/org/todo.org"
+            "~/org/projects.org"))
 
 ;; remember functionalities (to quickly type notes when they pop out in your mind)
 (setq org-default-notes-file "~/org/notes.org")
