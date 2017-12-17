@@ -71,8 +71,7 @@
 
 ;; files included in the agenda
 (setq org-agenda-files
-      (list "~/org/todo.org"
-            "~/org/projects.org"))
+      (list "~/org/todo.org"))
 
 ;; remember functionalities (to quickly type notes when they pop out in your mind)
 (setq org-default-notes-file "~/org/notes.org")
@@ -102,10 +101,8 @@
 
 ;; refile-targets
 (setq org-refile-targets (quote (("todo.org" :maxlevel . 1)
-                                 ("projects.org" :maxlevel . 1)
                                  ("someday.org" :level . 2)
                                  ("journal.org" :maxlevel . 2)
-                                 ("~/org/notes/software.org" :maxlevel . 2)
                                  (nil :maxlevel . 3))))
 
 ;; Need that in order for heml completion to work. From
