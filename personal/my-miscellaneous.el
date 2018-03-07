@@ -9,4 +9,4 @@
 (require 'iso-transl)
 
 ;; Default fill column, used e.g. by M-q
-(setq-default fill-column 80)
+(setq-default fill-column 79)
