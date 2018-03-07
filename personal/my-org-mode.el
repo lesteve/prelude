@@ -86,7 +86,7 @@
          "* %?\nEntered on %T\n%i\n")
         ("t" "Todo" entry (file+headline "~/org/todo.org" "Tasks")
          "* TODO %?\n  %i\n  %a")
-        ("j" "Journal" entry (file+datetree "~/org/journal.org")
+        ("j" "Journal" entry (file+olp+datetree "~/org/journal.org")
          "* %?\nEntered on %U\n  %i\n  %a")
         ("w" "Webpage" entry (file+headline "~/org/refile.org" "Webpages")
          "* %c\nEntered on %U\nSource: %:link\n%i\n%?")))
