@@ -127,6 +127,8 @@
                                      ("PROJECT" :foreground "red" :weight bold))))
 
 ;; ;; org-mode-hook
+(require 'yasnippet)
+
 (add-hook 'org-mode-hook
           (lambda ()
             (auto-fill-mode t)
