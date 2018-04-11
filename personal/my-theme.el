@@ -3,8 +3,6 @@
    'zenburn
    ;; Remove flymake squigly lines which prevents from reading the
    ;; code. Use different background instead.
-   `(flymake-errline ((t (:underline nil :background ,zenburn-bg+2))))
-   `(flymake-warnline ((t (:underline nil :background ,zenburn-bg+2))))))
-                    
+   `(flymake-errline ((t (:underline nil))))
+   `(flymake-warnline ((t (:underline nil))))))
 
-                  
