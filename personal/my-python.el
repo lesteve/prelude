@@ -5,10 +5,8 @@
 (setq elpy-rpc-backend "jedi")
 
 ;; Use ipython rather than plain python for the python shell
-(elpy-use-ipython)
-
-;; Work around Anaconda having a different Qt version that my system Qt
-(setq python-shell-interpreter-args "--simple-prompt -i --matplotlib tk")
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt --matplotlib")
 
 ;; emacs ipython notebook
 (require 'ein)
@@ -27,11 +25,3 @@
 ;; is really crap
 (require 'auto-complete-config)
 (ac-config-default)
-
-;; MuMaMo (not sure about this one)
-(custom-set-faces
- '(mumamo-background-chunk-major
-   ((((class color) (min-colors 88) (background dark)) nil)))
- ;; '(mumamo-background-chunk-submode1
- ;;   ((((class color) (min-colors 88) (background dark)) nil)))
- )
