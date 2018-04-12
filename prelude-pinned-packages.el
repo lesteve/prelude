@@ -19,7 +19,8 @@
         (coffee-mode . "melpa-stable")
         (company . "melpa-stable")
         (company-anaconda . "melpa-stable")
-        (company-auctex . "melpa-stable")
+        ;; company-auctex not available on melpa-stable 2018-04-11
+        ;; (company-auctex . "melpa-stable")
         (company-go . "melpa-stable")
         (crux . "melpa-stable")
         (cython-mode . "melpa-stable")
@@ -131,3 +132,4 @@
         (zenburn-theme . "melpa-stable")
         (zop-to-char . "melpa-stable")
         ))
+
