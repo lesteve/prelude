@@ -10,3 +10,6 @@
 
 ;; Default fill column, used e.g. by M-q
 (setq-default fill-column 79)
+
+;; disable arrow keys for navigation
+(setq guru-warn-only nil)
